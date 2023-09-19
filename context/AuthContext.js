@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async ({ name, email, password }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/auth/register`,
+        `https://ehealth-kohl.vercel.app/api/auth/register`,
         {
           name,
           email,
@@ -93,7 +93,7 @@ export const AuthProvider = ({ children }) => {
   const addNewProduct = async (product) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/products`,
+        `https://ehealth-kohl.vercel.app/api/products`,
         product
       );
 
